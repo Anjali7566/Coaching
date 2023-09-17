@@ -24,8 +24,8 @@
             <li><a href="#">profile</a></li>
 
             <div class="loginbtn displayflex">
-              <li class="login"><a href="login.html">Login</a></li>
-              <li class="login"><a href="form.html">Sign in</a></li>
+              <li class="login"><a href="login.php">Login</a></li>
+              <li class="login"><a href="signup.php">Sign in</a></li>
             </div>
           </div>
         </nav>

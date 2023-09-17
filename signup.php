@@ -20,36 +20,49 @@
                 <p id="cp">Login into your account</p>
             </div>
             <div class="formscon">
-                <form class="login-form" id="login">
+                <form action="" method="POST" class="login-form" id="login">
+<?php
+include ('connection.php');
+if(isset($_POST['login'])){
+    $username = $_POST['email'];
+    $password = $_POST['password'];
+
+    $search = "SELECT * FROM signupdetail WHERE email='$username' ";
+    $query = mysqli_query($con,$search);
+    $cnt = mysqli_num_rows($query);
+
+    if($search){
+      $pass = mysqli_fetch_assoc($query);
+      $database = $pass['password'];
+      $email = $pass['email'];
+
+      if($database && $email){
+        echo "login successfull";
+        header('location:findteacher.html');
+      }
+      else{
+        echo "password incorrect";
+      }
+    }
+      else{
+        echo "invalid email";
+      }
+    }
+?>
+
                     <div class="lfc">
-                        <input type="text" name="email1" placeholder="Username" required>
-                        <input type="password" name="password1" placeholder="password" required>
-                        <button type="submit">Login</button>
-                    </div>
-                </form>
-                <form  action="" method="POST"class="signup-form" id="signup">
-                    <div class="sfc">
-                        <input type="text" name="name" placeholder="Username" required>
-                        <input type="email" name="email" placeholder="email" required>
+                        <input type="text" name="email" placeholder="Username" required>
                         <input type="password" name="password" placeholder="password" required>
-                        <select name="profession">
-                            <option value="Select">Select</option>
-                            <option value="Teacher">Teacher</option>
-                            <option value="student">Student</option>
-                        </select>
-                        <button type="submit" name="submit">Signup</button>
+                        <button type="submit" name="login">Login</button>
                     </div>
                 </form>
-            </div>
-        </div>
-    </div>
 
-    <script src="signup.js"></script>
-</body>
 
-</html>
-<?php 
-     include 'connection.php';
+                <form  action="" method="POST"class="signup-form" id="signup">
+                  
+
+    <?php 
+    include 'connection.php';
     if(isset($_POST['submit'])){
     $name =$_POST['name'];
     $email =$_POST['email'];
@@ -72,20 +85,24 @@
    }
 }
 ?>
-<?php 
-    include ('connection.php');
-    if(isset($_POST['login'])){
-        $username = $_POST['email'];
-        $password = $_POST['password'];
 
-        $query = 'SELECT * FROM signupdetail WHERE email="$username" && password = "$password" ';
-        $data = mysqli_query($conn,$query);
-        $ttl = mysqli_num_rows($data);
-        if($ttl == 1){
-            header('location:findteacher.php');
-        }
-        else{
-            echo "Login failed";
-        }
-    }
-    ?>
+                    <div class="sfc">
+                        <input type="text" name="name" placeholder="Username" required>
+                        <input type="email" name="email" placeholder="email" required>
+                        <input type="password" name="password" placeholder="password" required>
+                        <select name="profession">
+                            <option value="Select">Select</option>
+                            <option value="Teacher">Teacher</option>
+                            <option value="student">Student</option>
+                        </select>
+                        <button type="submit" name="submit">Signup</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+
+</html>

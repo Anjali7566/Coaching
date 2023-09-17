@@ -20,7 +20,7 @@
             </div>
             <div class="nav-right">
                 <div class="getstart">
-                    <a href="index.html"> Get Started</a>
+                    <a href="index.php"> Get Started</a>
                 </div>
             </div>
         </nav>
@@ -33,8 +33,8 @@
 
 
         <div class="first-page-sub">
-            <a href="/Teachus/components/signup.html">Student</a>
-            <a href="login.html">Teacher</a>
+            <a href="signup.php">Sign in</a>
+            <a href="login.php">login</a>
         </div>
 
 
