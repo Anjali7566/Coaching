@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kanit:ital,wght@0,200;0,300;0,400;0,500;1,500&family=Lobster&family=Pacifico&family=Poppins:wght@500&family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.Signupcon{
+    height: 79rem;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.undcon {
+    height: 41rem;
+    width: 52rem;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0rem 0rem 1rem 0rem gray;
+    border-radius: 1rem;
+}
+.confsb{
+    width: 22rem;
+    margin: 3.5rem auto;
+    position: relative;
+    border-radius: 1rem;
+   
+}
+.toggle-btn{
+    background: transparent;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: relative;
+    font-weight: 600;
+}
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 11rem;
+    height: 100%;
+    background:blueviolet;
+    border-radius: 1rem;
+    transition: 1s;
+}
+.formscon{
+    display: flex;
+}
+.login-form{
+    width: 100%;
+    height: 50rem;
+    position: relative;
+    left: 9rem;
+    transition: 0.5s;
+}
+.lfc{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 34rem;
+    position: relative;
+    gap: 3rem;
+}
+.lfc input{
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0;
+    box-shadow: 0rem 0rem 0.2rem 0rem;
+    outline: 0;
+}
+.lfc button{
+    padding: 0.9rem;
+    border: 0;
+    box-shadow: 0rem 0rem 0.2rem 0rem gray;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+.signup-form{
+    width: 100%;
+    height: 80rem;
+    position: relative;
+    left: 29rem;
+    transition: 0.5s;
+}
+
+.sfc select{
+   
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0rem 0rem 0.2rem 0rem;
+    outline: 0;
+   
+}
+.sfc select option{
+   
+    padding: 10px;
+}
+
+.sfc{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 34rem;
+    position: relative;
+    gap: 3rem;
+}
+.sfc input{
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0;
+    box-shadow: 0rem 0rem 0.2rem 0rem;
+    outline: 0;
+}
+.sfc button{
+    padding: 0.9rem;
+    border: 0;
+    box-shadow: 0rem 0rem 0.2rem 0rem gray;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+.paragraph{
+    height: 5rem;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+.paragraph #cp{
+    text-align: center;
+    font-size: 3rem;
+    text-shadow: 0rem 0.4rem 0.5rem gray;
+    opacity: 0.5;
+}
