@@ -12,7 +12,7 @@
     <div class="navbar">
         <nav class=" navlist displayflex">
           <div class="navlogo">
-            <h2><a href="first-page.html"> Teachus</a></h2>
+            <h2><a href="first-page.php"> Teachus</a></h2>
           </div>
       </nav>
       </div>

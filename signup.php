@@ -37,7 +37,6 @@ if(isset($_POST['login'])){
       $email = $pass['email'];
 
       if($database && $email){
-        echo "login successfull";
         header('location:findteacher.html');
       }
       else{
@@ -53,7 +52,7 @@ if(isset($_POST['login'])){
                     <div class="lfc">
                         <input type="text" name="email" placeholder="Username" required>
                         <input type="password" name="password" placeholder="password" required>
-                        <button type="submit" name="login">Login</button>
+                        <button type="submit1" name="login">Login</button>
                     </div>
                 </form>
 

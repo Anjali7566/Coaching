@@ -16,11 +16,11 @@
       <div class="navbar">
         <nav class=" navlist displayflex">
           <div class="navlogo">
-           <a href="first-page.html"> <h2>Teachus</h2></a>
+           <a href="first-page.php"> <h2>Teachus</h2></a>
            </div>
           <div class="navd displayflex">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="findteacher.html">Find a Teacher</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="findteacher.php">Find a Teacher</a></li>
             <li><a href="#">profile</a></li>
 
             <div class="loginbtn displayflex">
